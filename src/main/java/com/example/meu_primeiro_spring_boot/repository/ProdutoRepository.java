@@ -8,6 +8,4 @@ import com.example.meu_primeiro_spring_boot.model.Produto;
 @Repository
 public interface ProdutoRepository extends JpaRepository<Produto, Long> {
 
-  
-
 }
