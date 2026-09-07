@@ -28,8 +28,7 @@ public class GlobalExceptionHandler {
     body.put("timestamp", LocalDateTime.now());
     body.put("status", HttpStatus.INTERNAL_SERVER_ERROR.value());
     body.put("error", "Erro interno do servidor");
-    body.put("message", ex.getMessage());
+    body.put("message", ex.getMessage()); 
     return new ResponseEntity<>(body, HttpStatus.INTERNAL_SERVER_ERROR);
   }
-
 }
